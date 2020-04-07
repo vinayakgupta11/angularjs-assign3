@@ -1,0 +1,54 @@
+<div>
+  <div id="header">
+    <div class="container">
+      <div>
+        <h3 class="logo">Coloristic</h3>
+      </div>
+      <ul class="nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="userDetails">User-Info</a></li>
+        <li><a ui-sref="productDetails">Products</a></li>
+        <li><a ui-sref="AddRemProd">Cart</a></li>
+        <li><a>Contact</a></li>
+        <li><a ui-sref="login">Signout</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blocx-grid">
+    <div ng-repeat="card in data" ng-cloak="">
+      <md-content class="md-padding">
+        <div>
+          <md-card>
+            <img ng-src="{{card.Img}}" class="md-card-image img-c" alt="Washed Out" />
+            <md-card-title layout-align="space-between center">
+              <md-card-title-text >
+                <span class="headline">Class: {{card.Cap}}</span><br/>
+                <span class="headline">Model: {{card.model}}</span><br/>
+                <span class="headline">Price:Rs {{card.Price}}</span>
+              </md-card-title-text>
+              <md-card-actions layout="column">
+                <md-button class="md-raised md-primary">Buy Product</md-button><br/>
+                <md-button class="md-raised md-primary" ng-click="AddTask(card)">Add to Cart</md-button>
+              </md-card-actions>
+            </md-card-title>
+          </md-card>
+        </div>
+      </md-content>
+    </div>
+  </div>
+  <div id='footer'>
+    <div class="container">
+      <div class='cont-foot'>
+        <h1 class='abc' style="font-size: 30px;width: 100%;">RECENT WORKS</h1>
+        <ul class="nav">
+          <li><a >all</a></li>
+          <li><a >web</a></li>
+          <li><a >mobile</a></li>
+          <li><a>design</a></li>
+          <li><a >photography</a></li>
+          <li><a >type</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>

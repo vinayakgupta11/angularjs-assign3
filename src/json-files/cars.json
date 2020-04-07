@@ -1,0 +1,75 @@
+[
+
+{
+    "Img": "../styles/assets/mercedes_s_class_sedan.jpg",
+    "Cap": "C-Class",
+    "Price": "62,20,000-/",
+    "model":"S560"
+},
+{
+    "Img": "../styles/assets/mercedes_a_class_sedan.jpg",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/Rectangle_3779.png",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/Rectangle_3780.png",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/mercedes_GLS_SUV.jpg",
+    "Cap": "GLS",
+    "Price": "72,20,000-/",
+    "model":"XU560"
+},
+{
+    "Img": "../styles/assets/mercedes_a_class_sedan.jpg",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/Rectangle_3779.png",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/Rectangle_3780.png",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/interior_image7.jpg",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/interior_image6.jpg",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/interior_image3.jpg",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+},
+{
+    "Img": "../styles/assets/interior_image2.jpg",
+    "Cap": "A-Class",
+    "Price": "52,20,000/-",
+    "model":"A220"
+}
+]

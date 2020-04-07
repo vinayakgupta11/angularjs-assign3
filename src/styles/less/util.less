@@ -1,0 +1,108 @@
+@import "home";
+@import "login";
+@import "try";
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../../styles/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../../styles/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../../styles/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../../styles/fonts/Poppins-SemiBold.ttf");
+}
+@header-bg-color: #ffad33;
+@footer-bg-color: #00b33c;
+@text-color: black;
+@footer-nav-color: white;
+@img-width: 400px;
+@pop-reg: "Poppins-Regular";
+@pop-med: "Poppins-Medium";
+@pop-bold: "Poppins-Bold";
+@brush-sc: "Brush Script MT";
+@b-fsize: 14px;
+.font-style(@pop, @size, @lht) {
+  font-family: @pop;
+  font-size: @size;
+  line-height: @lht;
+}
+.font-style-home(@pop, @size, @fwt) {
+  font-family: @pop;
+  font-size: @size;
+  font-weight: @fwt;
+  font-style: normal;
+  font-variant: normal;
+}
+.width(@size) when(isnumber(@size)) {
+  width: @size;
+}
+.width(@size) when(ispercentage(@size)) {
+  width: @size;
+}
+.display-flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.display-box() {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flex-wrap()
+{
+  -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.bg1 {
+  background-color: #3b5998;
+}
+.bg2 {
+  background-color: #1da1f2;
+}
+.bg3 {
+  background-color: #ea4335;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-middle {
+  vertical-align: middle;
+}
+.flex-c-m {
+  .display-flex();
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.flex-col-c {
+  .display-flex();
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+

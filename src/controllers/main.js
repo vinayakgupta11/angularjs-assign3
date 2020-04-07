@@ -1,10 +1,11 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
 /* eslint-disable func-names */
 /* eslint-disable prefer-arrow-callback */
 /* eslint-disable no-multi-spaces */
 /* eslint-disable no-undef */
 
-app.controller('loginController', function ($scope, $rootScope, $state, loginService) {
+app.controller('loginController', function ($scope, $state, loginService) {
   $scope.emailFormat = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
   $scope.passFormat = /^(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,20}$/;
   $scope.loginUser = function () {
@@ -25,7 +26,10 @@ app.controller('homeController', function ($scope) {
 });
 
 app.controller('userDetailController', function ($scope) {
-  $scope.message = 'Welcome to User details Page';
+  let Udata = localStorage.getItem('UserData');
+  Udata = JSON.parse(Udata);
+  $scope.data = Udata;
+  console.log('dadssdsdsd', $scope.data);
 });
 
 app.controller('productDetailController', function ($scope, prodService) {
@@ -42,9 +46,10 @@ app.controller('productDetailController', function ($scope, prodService) {
     }
   });
 });
-app.controller('AddRemProdController', function ($scope, prodService) {
+app.controller('AddRemProdController', function ($scope,  $rootScope, prodService) {
   $scope.sharedData =  prodService.getData();
-  console.log('aaaaa', $scope.sharedData);
+  $rootScope.CartVal = $scope.sharedData.length;
+  console.log('aaaaa', $rootScope.CartVal);
 
   $scope.RemoveTask = function (index) {
     $scope.sharedData.splice(index, 1);

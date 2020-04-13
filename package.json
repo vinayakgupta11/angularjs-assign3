@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG= app & nodemon server.js",
-    "lint": "eslint server.js"
+    "lint": "eslint server.js",
+    "dev": "lite-server"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,9 @@
     "chalk": "^3.0.0",
     "debug": "^4.1.1",
     "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
     "less": "^3.11.1",
+    "lite-server": "^2.5.4",
     "nodemon": "^2.0.2",
     "path": "^0.12.7"
   },
